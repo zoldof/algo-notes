@@ -637,6 +637,9 @@ $\hspace{0.9em} \phantom{000}1 \phantom{000}1 \phantom{000}2$</li>
 </div>
 
   </div>
-  <script type="module" src="entry.js"></script>
+  <script type="module">
+    import { renderKatex } from "./katex.js";
+    renderKatex(document.getElementById("content"));
+  </script>
 </body>
 </html>
