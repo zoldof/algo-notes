@@ -22,6 +22,9 @@
   <link rel="stylesheet" href="/algo-notes-ci/style.css">
 </head>
 <body>
+  <button id="toc-toggle" class="toc-toggle" aria-expanded="false">
+    📋
+  </button>
   <div id="content">
     <!-- Liquid -->
     <h1 id="どのような人に向けて作られた記事か">どのような人に向けて作られた記事か？</h1>
@@ -604,10 +607,13 @@
 
   </div>
   <script type="module">
+    import { InitTocToggle } from "/algo-notes-ci/toc.js";
     import { renderKatex } from "/algo-notes-ci/katex.js";
     document.addEventListener("DOMContentLoaded", async () => {
+      InitTocToggle();
       renderKatex(document.getElementById("content"));
     });
   </script>
+  <script src="/algo-notes-ci/toc.js"></script>
 </body>
 </html>
