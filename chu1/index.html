@@ -607,11 +607,10 @@
 
   </div>
   <script type="module">
-    //import { InitTocToggle } from "/algo-notes-ci/toc.js";
+    import { InitTocToggle } from "/algo-notes-ci/toc.js";
     import { renderKatex } from "/algo-notes-ci/katex.js";
-    
     document.addEventListener("DOMContentLoaded", async () => {
-      //InitTocToggle();
+      InitTocToggle();
       renderKatex(document.getElementById("content"));
     });
   </script>
