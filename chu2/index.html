@@ -23,13 +23,6 @@
 </head>
 <body>
   <div id="content">
-    🔹<a href="https://algorithm.memo.wiki/d/%c6%e2%c9%f4%a5%ea%a5%f3%a5%af%bd%b8" target="_blank">はじめに</a>
-    <details markdown="1"><summary>目次</summary>
-
-    * TOC
-    {:toc}
-
-    </details>
     <!-- Liquid -->
     <p>✅<a href="https://algorithm.memo.wiki/d/%c6%e2%c9%f4%a5%ea%a5%f3%a5%af%bd%b8" target="_blank">はじめに</a></p>
 <details>
@@ -427,6 +420,17 @@
     import { renderKatex } from "/algo-notes-ci/katex.js";
     document.addEventListener("DOMContentLoaded", async () => {
       renderKatex(document.getElementById("content"));
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("h2, h3, h4").forEach(h => {
+        const a = document.createElement("a");
+        a.href = "#top";
+        a.className = "back-to-top";
+        a.textContent = "↑";
+        h.appendChild(a);
+      });
     });
   </script>
 </body>
