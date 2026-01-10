@@ -605,19 +605,10 @@
   </div>
   <script type="module">
     import { renderKatex } from "/algo-notes-ci/katex.js";
+    import { addBackToTopLinks } from "/algo-notes-ci/back.js";
     document.addEventListener("DOMContentLoaded", async () => {
       renderKatex(document.getElementById("content"));
-    });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll("h2, h3, h4").forEach(h => {
-        const a = document.createElement("a");
-        a.href = "#top";
-        a.className = "back-to-top";
-        a.textContent = "↑";
-        h.appendChild(a);
-      });
+      addBackToTopLinks();
     });
   </script>
 </body>
