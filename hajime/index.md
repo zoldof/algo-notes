@@ -1,33 +1,41 @@
-## <details><summary>どのような人に向けて作られた記事か？</summary>
+# はじめに
 
-   ①小学校から中学3年までの数学を学び直したい人
-   ②[実用数学技能検定](https://www.su-gaku.net/suken)で合格したい人
-   この記事は、平成29年告示の学習指導要領に則った内容です。
+<details><summary>どのような人に向けて作られた記事か？</summary>
+   
+①小学校から中学3年までの数学を学び直したい人
+②[実用数学技能検定](https://www.su-gaku.net/suken)で合格したい人
+この記事は、平成29年告示の学習指導要領に則った内容です。
    
 </details>
 
-## <details><summary>算数からはじめる数学まとめ</summary>
-   - [算数を学び直してアルゴリズムを理解する: シリーズの第一歩](https://zoldof.github.io/algo-notes/shougaku)
-   - [中学1年の数学で学ぶアルゴリズムの基礎：シリーズ第2弾](https://zoldof.github.io/algo-notes/chu1)
-   - [中2数学](https://zoldof.github.io/algo-notes/chu2)
-   - 中3数学
-     - [【数学の役立て方】【基礎知識】](https://zoldof.github.io/algo-notes/chu3-1)
-     - [【検定過去問対策】【応用問題】](https://zoldof.github.io/algo-notes/chu3-2)
+---
+
+<details><summary>算数からはじめる数学まとめ</summary>
+   
+- [算数を学び直してアルゴリズムを理解する: シリーズの第一歩](https://zoldof.github.io/algo-notes/shougaku)
+- [中学1年の数学で学ぶアルゴリズムの基礎：シリーズ第2弾](https://zoldof.github.io/algo-notes/chu1)
+- [中2数学](https://zoldof.github.io/algo-notes/chu2)
+- 中3数学
+  - [【数学の役立て方】【基礎知識】](https://zoldof.github.io/algo-notes/chu3-1)
+  - [【検定過去問対策】【応用問題】](https://zoldof.github.io/algo-notes/chu3-2)
+
 </details>
 
-## <details><summary>Wiki管理者の成績</summary>
+---
+
+<details><summary>Wiki管理者の成績</summary>
 
 合格判定のものに限定しています。
 単位は％です。
 
-### ウェブサンプル
+**ウェブサンプル**
 |~級位|残時間率|正答率|
-|3- 1|54.0|96.7|
-|3- 2|45.0|80.0|
-|4- 1|64.0|96.7|
-|4- 2|50.0|90.0|
-|5- 1|38.0|96.7|
-|5- 2|56.7|75.0|
+|3-1|54.0|96.7|
+|3-2|45.0|80.0|
+|4-1|64.0|96.7|
+|4-2|50.0|90.0|
+|5-1|38.0|96.7|
+|5-2|56.7|75.0|
 |6|50.0|93.3|
 |7|46.0|93.3|
 |8|66.0|93.3|
@@ -35,7 +43,7 @@
 |10|60.0|95.0|
 |11|90.0|100|
 
-### 過去問題集
+**過去問題集**
 3級
 |第&#9899;&#65039;回|第&#9899;&#65039;次|残時間率|正答率|
 |1|1|54.0|93.3|
@@ -78,8 +86,7 @@
 |5|50.0|97.0|
 |6|36.0|90.0|
 
-### 資格試験本番
-
+**資格試験本番**
 |~級位|第&#9899;&#65039;次|残時間率|正答率|
 |3|1|40.0|93.3|
 |3|2|0.0|94.0|
@@ -93,7 +100,9 @@
 
 </details>
 
-## <details><summary>執筆経緯</summary>
+---
+
+<details><summary>執筆経緯</summary>
 
 「なぜ、算数を学び直したいのか」理由は人によって様々です。
 私の場合は、アルゴリズムの理解を極めるのに必要な知識だと認識したからです。
@@ -114,7 +123,9 @@
 
 </details>
 
-## <details><summary>構成案内</summary>
+---
+
+<details><summary>構成案内</summary>
 
 ◆構成の流れ：中2以降
 ・基本的な流れは［検定過去問対策→応用問題→基礎知識］で、ページが2つ以上になる場合あり
@@ -131,7 +142,9 @@
 
 </details>
 
-## <details><summary>四則演算の扱い</summary>
+---
+
+<details><summary>四則演算の扱い</summary>
 
 四則演算と加減乗除の記載方法について混同して使われることが多い
 特に説明の文章が長くなってしまうときに加減乗除の記載方法をつかう
@@ -141,7 +154,9 @@
 
 </details>
 
-## <details><summary>言葉遣いの注意点</summary>
+---
+
+<details><summary>言葉遣いの注意点</summary>
 
 - 式：文字式
   - ［x,y,z］：未知数としての伝統
@@ -157,7 +172,9 @@
 
 </details>
 
-## <details><summary>参考サイト</summary>
+---
+
+<details><summary>参考サイト</summary>
 
 - [平成20年告示 小学校学習指導要項 算数](https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/syo/san.htm)
 - [平成29年告示 中学校学習指導要項 数学](https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387018_004.pdf)
@@ -166,3 +183,5 @@
 - [親子で成長する中学数学 標本調査](https://oyako-cyugaku.com/category7/entry30.html)
 
 </details>
+
+---
