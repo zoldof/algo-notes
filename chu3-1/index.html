@@ -24,7 +24,7 @@
 <body>
   <div id="content">
     <!-- Liquid -->
-    <p>🔸️<a href="https://algorithm.memo.wiki/d/%c6%e2%c9%f4%a5%ea%a5%f3%a5%af%bd%b8" target="_blank">はじめに</a></p>
+    <p>🔰<a href="https://algorithm.memo.wiki/d/%c6%e2%c9%f4%a5%ea%a5%f3%a5%af%bd%b8" target="_blank">はじめに</a></p>
 <details>
   <summary>目次</summary>
 
@@ -154,7 +154,7 @@
 ・除算は割り切れるもの限定とする<br />
 :::</p>
 
-<p>&amp;ref(https://image01.seesaawiki.jp/a/o/algorithm-memo/1b81b258c8a99164.jpg,500,836)</p>
+<p><img src="https://image01.seesaawiki.jp/a/o/algorithm-memo/1b81b258c8a99164.jpg,500,836" alt="" /></p>
 <h2 id="多項式">【多項式】</h2>
 
 <p>◆式の展開<br />
@@ -230,9 +230,9 @@
 
 <p>◆平方根の大小と理屈<br />
 ・a, bが正の数でa &lt; bならば正方形の1辺と同じ理屈で√a &lt; √b<br />
-・[[開閉法とは»https://suugakunoie.com/suugaku1/hissann-kaiheihou-yarikata]]<br />
+・<a href="https://suugakunoie.com/suugaku1/hissann-kaiheihou-yarikata" target="_blank">開閉法とは</a><br />
 ・・例えば5桁の数の平方根が100a + 10b + cであることを利用して筆算形式で表したもの<br />
-・[[二分法とは»https://zenn.dev/algorithm_math/articles/c2d1506fdfe171#二分探索]]<br />
+・<a href="https://zenn.dev/algorithm_math/articles/c2d1506fdfe171#二分探索" target="_blank">二分法とは</a><br />
 ・・無理数の場合は近似値を区間で二分する<br />
 ・［x：整数，y：平方根］となる平方根のグラフはなだらかに増加する曲線になる</p>
 
@@ -521,10 +521,29 @@
 
 <p>◆相似<br />
 ・関係式：(a/A) = (b/B)<br />
-↑問題を解く場合につかう<br />
-||対象個数|大きさ|<br />
-|母集団|a|A|<br />
-|標本|b|B|</p>
+↑問題を解く場合につかう</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>対象個数</th>
+      <th>大きさ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>母集団</td>
+      <td>a</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>標本</td>
+      <td>b</td>
+      <td>B</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>◆推定<br />
 :::<br />
@@ -538,7 +557,7 @@
   </div>
   <script type="module">
     import { renderKatex } from "/algo-notes-ci/katex.js";
-    import { addBackToTopLinks } from "/algo-notes-ci/back.js";
+    import { addBackToTopLinks } from "/algo-notes-ci/backtop.js";
     document.addEventListener("DOMContentLoaded", async () => {
       renderKatex(document.getElementById("content"));
       addBackToTopLinks();
