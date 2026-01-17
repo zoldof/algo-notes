@@ -155,7 +155,156 @@
 ・除算は割り切れるもの限定とする<br />
 :::</p>
 
-<p><img src="https://image01.seesaawiki.jp/a/o/algorithm-memo/1b81b258c8a99164.jpg" alt="" /></p>
+<table>
+  <thead>
+    <tr>
+      <th>加減乗除</th>
+      <th>組合せ</th>
+      <th>結果</th>
+      <th>式と説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>加算</td>
+      <td>偶数 + 偶数</td>
+      <td>偶数</td>
+      <td>$2n + 2m = 2(n + m)$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>〃</td>
+      <td>偶数 + 奇数</td>
+      <td>奇数</td>
+      <td>$2n + (2m - 1) = 2(n + m) - 1$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>〃</td>
+      <td>奇数 + 奇数</td>
+      <td>偶数</td>
+      <td>$(2n - 1) + (2m - 1) = 2(n + m - 1)$</td>
+    </tr>
+    <tr>
+      <td>減算</td>
+      <td>偶数 - 偶数</td>
+      <td>偶数</td>
+      <td>$2n - 2m = 2(n - m)$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>〃</td>
+      <td>偶数 - 奇数</td>
+      <td>奇数</td>
+      <td>$2n - (2m - 1) = 2(n - m + 1) - 1$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>〃</td>
+      <td>奇数 - 偶数</td>
+      <td>奇数</td>
+      <td>$(2n - 1) - 2m = 2(n - m) - 1$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>〃</td>
+      <td>奇数 - 奇数</td>
+      <td>偶数</td>
+      <td>$(2n - 1) - (2m - 1) = 2(n - m)$</td>
+    </tr>
+    <tr>
+      <td>乗算</td>
+      <td>偶数 × 偶数</td>
+      <td>偶数</td>
+      <td>$(2n)(2m) = 4nm = 2(2nm)$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>〃</td>
+      <td>偶数 × 奇数</td>
+      <td>偶数</td>
+      <td>$(2n)(2m - 1) = 2(2nm - n)$</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>〃</td>
+      <td>奇数 × 奇数</td>
+      <td>奇数</td>
+      <td>$(2n - 1)(2m - 1) = 2(2nm - n - m) + 1$</td>
+    </tr>
+    <tr>
+      <td>除算</td>
+      <td>偶数 ÷ 偶数</td>
+      <td>整数</td>
+      <td>$\frac{2n}{2m}$ 例えば除数が2なら商は偶奇両方ありうる</td>
+    </tr>
+    <tr>
+      <td>除算</td>
+      <td>偶数 ÷ 奇数</td>
+      <td>偶数</td>
+      <td>$\frac{2n}{2m - 1}$ 乗算の性質から</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>〃</td>
+      <td>奇数 ÷ 偶数</td>
+      <td>分数または小数</td>
+      <td>$\frac{2n - 1}{2m}$ 奇数は2の倍数に1加減した形だから</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>〃</td>
+      <td>奇数 ÷ 奇数</td>
+      <td>奇数</td>
+      <td>$\frac{2(2nm - n - m) + 1}{2m - 1}$ 乗算の性質から</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="多項式">【多項式】</h2>
 
