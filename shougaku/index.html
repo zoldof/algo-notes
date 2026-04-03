@@ -15,11 +15,11 @@
   src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
   <!-- General -->
-  <!-- <base href="/algo-notes-ci">_config.yml -->
+  <!-- <base href="">_config.yml -->
   <link rel="icon" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
   <!-- <link rel="stylesheet" href="/algo-notes-ci/style.css"> -->
-  <link rel="stylesheet" href="/algo-notes-ci/style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body class="page-shougaku">
   <div id="content">
@@ -693,8 +693,8 @@ $\hspace{0.9em} \phantom{000}1 \phantom{000}1 \phantom{000}2$</li>
 
   </div>
   <script type="module">
-    import { renderKatex } from "/algo-notes-ci/katex.js";
-    import { addBackToTopLinks } from "/algo-notes-ci/backtop.js";
+    import { renderKatex } from "/katex.js";
+    import { addBackToTopLinks } from "/backtop.js";
     document.addEventListener("DOMContentLoaded", async () => {
       renderKatex(document.getElementById("content"));
       addBackToTopLinks();

@@ -15,11 +15,11 @@
   src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
   <!-- General -->
-  <!-- <base href="/algo-notes-ci">_config.yml -->
+  <!-- <base href="">_config.yml -->
   <link rel="icon" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
   <!-- <link rel="stylesheet" href="/algo-notes-ci/style.css"> -->
-  <link rel="stylesheet" href="/algo-notes-ci/style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body class="page-test">
   <div id="content">
@@ -99,8 +99,8 @@ test</p>
 
   </div>
   <script type="module">
-    import { renderKatex } from "/algo-notes-ci/katex.js";
-    import { addBackToTopLinks } from "/algo-notes-ci/backtop.js";
+    import { renderKatex } from "/katex.js";
+    import { addBackToTopLinks } from "/backtop.js";
     document.addEventListener("DOMContentLoaded", async () => {
       renderKatex(document.getElementById("content"));
       addBackToTopLinks();
