@@ -22,15 +22,15 @@
   src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
   <!-- General -->
-  <link rel="icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@f07e3d352991f39b76d81f9c879f6e0da5736b3a/docs/favicon.png">
-  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@f07e3d352991f39b76d81f9c879f6e0da5736b3a/docs/favicon.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@f07e3d352991f39b76d81f9c879f6e0da5736b3a/docs/style.css">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@{{ site.github.build_revision }}54074af53ee213e53ac338d5231682ea40fba22b/docs/favicon.png">
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@{{ site.github.build_revision }}54074af53ee213e53ac338d5231682ea40fba22b/docs/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@{{ site.github.build_revision }}54074af53ee213e53ac338d5231682ea40fba22b/docs/style.css">
 </head>
 
 <body class="page-chu3-1">
   <div id="content">
     <!-- Liquid -->
-    https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@f07e3d352991f39b76d81f9c879f6e0da5736b3a
+    https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@{{ site.github.build_revision }}54074af53ee213e53ac338d5231682ea40fba22b
     <p>📖<a href="https://zoldof.com/" target="_blank">メニュー</a><br />
 🔰<a href="https://zoldof.github.io/algo-notes-ci/?dname=hajime" target="_blank">はじめに</a></p>
 
@@ -675,8 +675,8 @@
 
   </div>
   <script type="module">
-    import { renderKatex } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@f07e3d352991f39b76d81f9c879f6e0da5736b3a/docs/katex.js";
-    import { addBackToTopLinks } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@f07e3d352991f39b76d81f9c879f6e0da5736b3a/docs/backtop.js";
+    import { renderKatex } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@{{ site.github.build_revision }}54074af53ee213e53ac338d5231682ea40fba22b/docs/katex.js";
+    import { addBackToTopLinks } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@{{ site.github.build_revision }}54074af53ee213e53ac338d5231682ea40fba22b/docs/backtop.js";
     document.addEventListener("DOMContentLoaded", async () => {
       renderKatex(document.getElementById("content"));
       addBackToTopLinks();
