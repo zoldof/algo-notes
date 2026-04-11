@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <script>
-    location.replace("https://zoldof.github.io/algo-notes-ci/?dname=menu");
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="iftMWxWANpsgvxI_uGQFejVc_20AYBDnGFsmsrB19VE" />
+  <meta name="description" content="スマホやPCのアプリは，形式化された手順＝プログラムで動く。その背後には問題解決の抽象構造であるアルゴリズムがある。このアルゴリズムは現実の課題を分解し，戦略を設計する強力な枠組みになる。">
+  <title>アルゴリズム×数学の学び直し</title>
+  <!-- Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- KaTeX -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer
+    src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer
+    src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <!-- General -->
+  <!-- <base href="/algo-notes-ci/"> -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body></body>
+  
+<body>
+  <header class="site-header">
+    <div class="site-title"></div>
+    <script>
+      document.querySelector('.site-title').textContent = document.title;
+    </script>
+  </header>
+  <div id="content">loading...</div>
+  <script type="module" src="main.js"></script>
+</body>
 </html>
