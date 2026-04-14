@@ -25,7 +25,7 @@
   <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/favicon.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/style.css">
   <!-- Test and Purge -->  
-  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@20ddbb02444ee939cad81d0fab82ad7a5be4d335/docs/style.css">-->
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@98e25a56d1cfc180151739371c2c5e9d3375fdb3/docs/style.css">-->
   <!-- https://purge.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs -->
 </head>
 
@@ -36,6 +36,7 @@
   </header>
 
 <body class="page-menu">
+  <div id="bookmark">bookmark</div>
   <div id="content">
     <!-- Liquid -->
     <h1 id="哲学">哲学</h1>
@@ -230,9 +231,13 @@
   <script type="module">
     import { renderKatex } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/katex.js";
     import { addBackToTopLinks } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/backtop.js";
+    import { loadBookMark } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/bookmark.js";
     document.addEventListener("DOMContentLoaded", async () => {
       renderKatex(document.getElementById("content"));
       addBackToTopLinks();
+      if (document.body.classList.contains('page-menu')) {
+        loadBookMark();
+      }
     });
   </script>
 </body>
