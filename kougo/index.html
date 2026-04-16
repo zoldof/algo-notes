@@ -26,7 +26,7 @@
   <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/favicon.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/style.css">
   <!-- Test and Purge -->  
-  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@8736db6947a926643c74567cf1e00a2aaa0fcdff/docs/style.css">-->
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@cc25db6009e673d182c4f5ca1171babc1761d265/docs/style.css">-->
   <!-- https://purge.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs -->
 </head>
 
@@ -733,13 +733,11 @@
   <script type="module">
     import { renderKatex } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/katex.js";
     import { addBackToTopLinks } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/backtop.js";
-    import { load } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@8736db6947a926643c74567cf1e00a2aaa0fcdff/docs/bookmark.js";
+    import { load } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@cc25db6009e673d182c4f5ca1171babc1761d265/docs/bookmark.js";
     document.addEventListener("DOMContentLoaded", async () => {
       renderKatex(document.getElementById("content"));
       addBackToTopLinks();
-      if (document.body.classList.contains('page-menu')) {
-        load();
-      }
+      if (document.body.classList.contains('page-menu')) { load(); }
     });
   </script>
 </body>
