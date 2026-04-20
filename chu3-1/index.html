@@ -22,7 +22,7 @@
   <!-- General -->
   <link rel="icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/favicon.png">
   <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/favicon.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@b7ae55d205f5b773e336b352cafdeda4127bd410/docs/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@ca8d98261f116b0755b87b8a951e0fb8b8bb5b0c/docs/style.css">
   <!-- Test and Purge -->  
   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@site.github.build_revision/docs/style.css">-->
   <!-- https://purge.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs -->
@@ -69,11 +69,11 @@
 ↑2次方程式を扱うために平方根の知識が必要である</p>
 
 <p>◆近似値<br />
-①利得・損益の計算<br />
-``` txt {:.wrap}<br />
-・利益関数P(x)は二次関数になることが多く、P(x)の最大値を求める<br />
-・例えば変動費を工場稼働にかかる電気代とすれば、人間の疲労により生産時間が増加するため稼働時間が増加するので、それをx²に近似している。x²の場合、疲労の変化具合が放物線状であると見立てている。固定費を材料費とする</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>・例：「ある商品1個の売価を10円、固定費4円とすると、利益が最大になる個数xは？」
+①利得・損益の計算</p>
+<pre><code class="language-txt">・利益関数P(x)は二次関数になることが多く、P(x)の最大値を求める
+・例えば変動費を工場稼働にかかる電気代とすれば、人間の疲労により生産時間が増加するため稼働時間が増加するので、それをx&amp;#178;に近似している。x&amp;#178;の場合、疲労の変化具合が放物線状であると見立てている。固定費を材料費とする
+```{:.wrap}
+・例：「ある商品1個の売価を10円、固定費4円とすると、利益が最大になる個数xは？」
 ・式：利益関数：P(x) = R(x) - C(x)
 ・・売上関数：R(x) = 10x
 ・・コスト関数：C(x) = x&amp;#178; + 4x（変動費はx&amp;#178;）
@@ -92,7 +92,7 @@
 ②ゲームの当たり判定
 ```{:.wrap}
 ・接触するポイント（= 交点）を見つけて、当たり判定を作る
-</code></pre></div></div>
+</code></pre>
 <p>・例：「プレイヤーがジャンプ、敵が直線移動しているときの両者が衝突する位置は？」<br />
 ・変数：［x：時間，v₀：初速，y₀：初期高さ］<br />
 ・式：-½gx² + v₀x + y₀ = 2x + 3<br />
