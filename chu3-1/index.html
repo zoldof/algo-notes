@@ -22,7 +22,7 @@
   <!-- General -->
   <link rel="icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/favicon.png">
   <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/favicon.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@2f194a1711cc2db3de0fc9d1bed228e06dafee97/docs/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@765954ea8706d872180b7a4c51689c56df587a44/docs/style.css">
   <!-- Test and Purge -->  
   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@site.github.build_revision/docs/style.css">-->
   <!-- https://purge.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs -->
@@ -69,29 +69,30 @@
 ↑2次方程式を扱うために平方根の知識が必要である</p>
 
 <p>◆近似値<br />
-①利得・損益の計算</p>
-<pre><code class="language-{:.wrap}">・利益関数P(x)は二次関数になることが多く、P(x)の最大値を求める
-・例えば変動費を工場稼働にかかる電気代とすれば、人間の疲労により生産時間が増加するため稼働時間が増加するので、それをx&amp;#178;に近似している。x&amp;#178;の場合、疲労の変化具合が放物線状であると見立てている。固定費を材料費とする
-</code></pre>
-<p>・例：「ある商品1個の売価を10円、固定費4円とすると、利益が最大になる個数xは？」<br />
-・式：利益関数：P(x) = R(x) - C(x)<br />
-・・売上関数：R(x) = 10x<br />
-・・コスト関数：C(x) = x² + 4x（変動費はx²）<br />
-・・損益分岐点：R(x) = C(x)<br />
-・・最大利益：頂点</p>
+①利得・損益の計算<br />
+```plaintext {:.wrap}<br />
+・利益関数P(x)は二次関数になることが多く、P(x)の最大値を求める<br />
+・例えば変動費を工場稼働にかかる電気代とすれば、人間の疲労により生産時間が増加するため稼働時間が増加するので、それをx²に近似している。x²の場合、疲労の変化具合が放物線状であると見立てている。固定費を材料費とする</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>・例：「ある商品1個の売価を10円、固定費4円とすると、利益が最大になる個数xは？」
+・式：利益関数：P(x) = R(x) - C(x)
+・・売上関数：R(x) = 10x
+・・コスト関数：C(x) = x&amp;#178; + 4x（変動費はx&amp;#178;）
+・・損益分岐点：R(x) = C(x)
+・・最大利益：頂点
 
-<p>◆真の値<br />
-①落下運動の時間や高さ<br />
-・例：「高さhメートルから物を落としたら、t秒後に地面に届く。このhを求めよ」<br />
-・式：h = ½gt² → これを整理すると二次方程式になる<br />
-・・距離 = 平均速度 × 時間<br />
-・・平均速度 = (初速 + 最終速度) ÷ 2<br />
-・・重力加速度 (g)：ニュートンの万有引力定数と運動方程式から導出できる<br />
-・・加速度：ガリレオ・ガリレイが斜面での物体落下の実験により発見したもの</p>
+◆真の値
+①落下運動の時間や高さ
+・例：「高さhメートルから物を落としたら、t秒後に地面に届く。このhを求めよ」
+・式：h = &amp;#189;gt&amp;#178; → これを整理すると二次方程式になる
+・・距離 = 平均速度 × 時間
+・・平均速度 = (初速 + 最終速度) ÷ 2
+・・重力加速度 (g)：ニュートンの万有引力定数と運動方程式から導出できる
+・・加速度：ガリレオ・ガリレイが斜面での物体落下の実験により発見したもの
 
-<p>②ゲームの当たり判定</p>
-<pre><code class="language-{:.wrap}">・接触するポイント（= 交点）を見つけて、当たり判定を作る
-</code></pre>
+②ゲームの当たり判定
+```{:.wrap}
+・接触するポイント（= 交点）を見つけて、当たり判定を作る
+</code></pre></div></div>
 <p>・例：「プレイヤーがジャンプ、敵が直線移動しているときの両者が衝突する位置は？」<br />
 ・変数：［x：時間，v₀：初速，y₀：初期高さ］<br />
 ・式：-½gx² + v₀x + y₀ = 2x + 3<br />
