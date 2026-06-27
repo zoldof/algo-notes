@@ -41,7 +41,7 @@
   <link rel="manifest" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/manifest.json">
   <link rel="icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/favicon.png">
   <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/favicon.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@aff432e531aa6344add37101a05371faeb2116db/docs/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@ee6469688c5eba79ee0a56097ad758634fbdb239/docs/style.css">
   <!-- Test and Purge *コメントの中身でもビルドバージョン変更が反映されるのでクォートで囲っている -->  
   <!-- href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@site.github.build_revision/docs/style.css"> -->
   <!-- append: 'site.github.build_revision' | -->
@@ -72,25 +72,23 @@
       <li>
         <details id="mathIntro">
           <summary>数学をわかりやすく学ぶ</summary>
-          <p>数学は公式を覚えるだけではなく、
+          <div style="white-space: pre-wrap;">
+数学は公式を覚えるだけではなく、
 なぜそうなるのか、どんな考え方で解くのかを理解することで、
-仕組みが見えてきます。</p>
-
-          <p>このサイトでは、
+仕組みが見えてきます。
+  
+このサイトでは、
 小学校から中学校までの数学を、
 単元ごとに整理して学べるようにまとめています。
-各ページ最上部の「目次」から学びたい項目に移動できます。</p>
+各ページ最上部の「目次」から学びたい項目に移動できます。
+</div>
         </details>
       </li>
     </ul>
   </li>
   <li>
     <h3 id="小学校">小学校</h3>
-    <ul>
-      <li>
-        <h4 id="小学数学まとめ"><a href="https://zoldof.com/shougaku/">小学数学まとめ</a></h4>
-      </li>
-    </ul>
+    <p>-　<a href="https://zoldof.com/shougaku/">小学数学まとめ</a></p>
   </li>
   <li>
     <h3 id="中学1年">中学1年</h3>
@@ -273,7 +271,7 @@
   <script type="module">
     import { renderKatex } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/katex.js";
     import { addBackToTopLinks } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/backtop.js";
-    import { initListener, load } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@aff432e531aa6344add37101a05371faeb2116db/docs/bookmark.js";
+    import { initListener, load } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@ee6469688c5eba79ee0a56097ad758634fbdb239/docs/bookmark.js";
     document.addEventListener("DOMContentLoaded", async () => {
       renderKatex(document.getElementById("content"));
       addBackToTopLinks();
