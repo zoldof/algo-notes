@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="iftMWxWANpsgvxI_uGQFejVc_20AYBDnGFsmsrB19VE">
+  <meta name="robots" content="">
+  <meta name="description" content="">
+  <!-- Include -->
+  <!-- KaTeX -->
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+  <!-- Check dist ⇔ menu フロントマターでの指定によるファイル名とslugの2重管理を避け、CI/CD運用によるディレクトリ構成変更のため -->
+<!-- slug生成とは別にfull_urlとサムネイルパスの準備も行う -->
+
+
+
+
+
+  
+  
+  
+  <meta property="og:type" content="article">
+  
+
+
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="https://zoldof.com/2026072001">
+<meta property="og:site_name" content="zoldof.com">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/thumbnail/default.webp">
+<meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://zoldof.com/2026072001">
+  <title>SEOとサイト価値</title>
+  <!-- General -->
+  <link rel="manifest" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/manifest.json">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/favicon.png">
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/style.css">
+  <!-- Test and Purge *コメントの中身でもビルドバージョン変更が反映されるのでクォートで囲っている -->  
+  <!-- href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@site.github.build_revision/docs/style.css"> -->
+  <!-- append: 'site.github.build_revision' | -->
+  <!-- https://purge.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs -->
+<body class="page-2026072001">
+  <!-- Include -->
+  <header class="site-header">
+
+  <a href="https://zoldof.com">📖メニュー</a>
+  <a href="https://zoldof.com/hajime/" target="_blank" rel="noopener noreferrer">🔰はじめに</a>
+  <a href="https://zoldof.github.io/sandbox/mindmap-3d/" target="_blank" rel="noopener noreferrer">🫧マップ</a>
+  <a href="https://twitter.com/intent/tweet?url=https://zoldof.com/2026072001" target="_blank" rel="noopener noreferrer">🐦Tweet</a>
+  <a href="https://social-plugins.line.me/lineit/share?url=https://zoldof.com/2026072001" target="_blank" rel="noopener noreferrer">🍀LINE</a>
+</header>
+
+  <div id="content">
+    <!-- Liquid -->
+    <p>これまでの対話を通して見えてきたのは、「SEOのテクニック」よりも、「サイトを何のために運営するのか」という軸でした。そこを中心に整理すると、次のような手順になると思います。</p>
+
+<ol>
+  <li>
+    <p><strong>目的を固定する。</strong></p>
+
+    <p>最初に決めるべきことは、「CTRを上げること」ではなく、</p>
+
+    <blockquote>
+      <p><strong>自分がまだ見たことのない理解に到達すること</strong></p>
+    </blockquote>
+
+    <p>をサイト運営の目的とすることです。</p>
+
+    <p>ここがぶれると、記事の方向性もぶれます。</p>
+  </li>
+  <li>
+    <p><strong>理解を得るためのテーマを探究する。</strong></p>
+
+    <p>例えば、</p>
+
+    <p>[技術史，数学，アルゴリズム，情報理論，制約条件，社会]</p>
+
+    <p>のように、自分が本当に知りたいテーマを深く調べ、考察します。</p>
+  </li>
+  <li>
+    <p><strong>新しい理解が得られたら、それを一つの単位に整理する。</strong></p>
+
+    <p>例えば、</p>
+
+    <p>「なぜ有限体が必要なのか」</p>
+
+    <p>「なぜ互除法が現代でも重要なのか」</p>
+
+    <p>「技術史を制約条件付き最適化として見ると何が説明できるのか」</p>
+
+    <p>のように、一つの問いに対する答えとしてまとめます。</p>
+  </li>
+  <li>
+    <p><strong>記事として公開する。</strong></p>
+
+    <p>この段階ではSEOを第一目的にしません。</p>
+
+    <p>「自分の理解を他人にも伝わる形に翻訳する」</p>
+
+    <p>という意識で書きます。</p>
+  </li>
+  <li>
+    <p><strong>記事を適切な粒度に分割する。</strong></p>
+
+    <p>一つの大きな記事だけではなく、検索意図ごとに分けます。</p>
+
+    <p>例えば、</p>
+
+    <p>「有限体」の記事から、</p>
+
+    <p>[逆元，既約多項式，GF(256)，拡張ユークリッド互除法]</p>
+
+    <p>を独立した記事として展開します。</p>
+
+    <p>これは「薄くする」のではなく、「一つの問いを一つの記事にする」という意味です。</p>
+  </li>
+  <li>
+    <p><strong>記事同士を構造化する。</strong></p>
+
+    <p>学年ページやカテゴリページは、</p>
+
+    <p>「リンク集」</p>
+
+    <p>ではなく、</p>
+
+    <p>「知識のハブ」</p>
+
+    <p>として設計します。</p>
+
+    <p>各記事が互いに関連し合い、読者が知識をたどれる構造を作ります。</p>
+  </li>
+  <li>
+    <p><strong>CTRやPVは結果として観測する。</strong></p>
+
+    <p>ここで初めてSearch Consoleを見ます。</p>
+
+    <p>CTRや平均順位は、</p>
+
+    <p>「研究の成果がどれくらい届いているか」</p>
+
+    <p>を測る指標であって、目的ではありません。</p>
+  </li>
+  <li>
+    <p><strong>得られたデータを利用して改善する。</strong></p>
+
+    <p>例えば、</p>
+
+    <p>「この記事はよく読まれている」</p>
+
+    <p>「この概念への関心が高い」</p>
+
+    <p>という情報をもとに、</p>
+
+    <p>次に探究するテーマや、記事の整理方法を考えます。</p>
+
+    <p>ここでも「CTRを稼ぐための記事を書く」のではなく、「より多くの人に理解を届けるにはどう表現すればよいか」を考えます。</p>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="このチャットを通じて変わった点">このチャットを通じて変わった点</h2>
+
+<p>当初は、</p>
+
+<blockquote>
+  <p>「入口を増やすために記事数を増やすべきか」</p>
+</blockquote>
+
+<p>というSEOの話から始まりました。</p>
+
+<p>しかし議論を進めるうちに、本質は、</p>
+
+<blockquote>
+  <p><strong>「サイトは何のために存在するのか」</strong></p>
+</blockquote>
+
+<p>という問いに移りました。</p>
+
+<p>その結果、</p>
+
+<ul>
+  <li>「既存の記事があるなら意味がないのではないか」</li>
+  <li>「体験談を書けばオリジナリティになるのか」</li>
+  <li>「すぐ真似されるなら価値はあるのか」</li>
+</ul>
+
+<p>という疑問も、すべて</p>
+
+<blockquote>
+  <p><strong>目的が「理解の探究」なのか、「希少性の獲得」なのか</strong></p>
+</blockquote>
+
+<p>という一つの軸に収束しました。</p>
+
+<hr />
+
+<h2 id="私なら最後に一つだけ追加する手順">私なら最後に一つだけ追加する手順</h2>
+
+<ol>
+  <li><strong>「新しい理解」を公開前に自分で評価する。</strong></li>
+</ol>
+
+<p>記事を書く前に、</p>
+
+<ul>
+  <li>この理解によって、自分は以前より何が説明できるようになったのか。</li>
+  <li>以前は別々だった概念が、どのようにつながったのか。</li>
+  <li>この理解は次の探究につながる土台になっているか。</li>
+</ul>
+
+<p>を自問します。</p>
+
+<p>もしこの問いに明確に答えられるなら、その記事はあなたにとって公開する価値があります。</p>
+
+<p>そして、そのような記事が積み重なることで、SEOは「目的」ではなく、「探究の成果がどれだけ他者にも役立ったか」を示す副次的な指標になります。これは、このチャット全体を通じて一貫して見えてきた結論だと私は考えます。</p>
+
+<h1 id="pvctr価値について">PV，CTR，価値について</h1>
+
+<p>実は、<strong>PV，CTR，価値</strong>は、それぞれ測っているものが違います。</p>
+
+<ul>
+  <li><strong>PV</strong>は「何回見られたか」</li>
+  <li><strong>CTR</strong>は「検索結果を見た人がどれだけクリックしたか」</li>
+  <li><strong>価値</strong>は「読者や知識にどんな変化をもたらしたか」</li>
+</ul>
+
+<p>この3つには相関があることもありますが、同じものではありません。</p>
+
+<p>例えば、</p>
+
+<ul>
+  <li>「○○とは？」という記事はPVもCTRも高いかもしれませんが、内容は他サイトとほぼ同じかもしれません。</li>
+  <li>一方で、「技術史を制約条件付き最適化として捉える」という記事はPVは少なくても、読者一人ひとりに強い影響を与えるかもしれません。</li>
+</ul>
+
+<p>どちらが「価値があるか」は、PVだけでは決まりません。</p>
+
+<hr />
+
+<p>ここで私は、一つ視点を変えたいと思います。</p>
+
+<p>あなたはこれまで「価値」を</p>
+
+<blockquote>
+  <p><strong>複製されないこと</strong></p>
+</blockquote>
+
+<p>と結び付けて考える傾向がありました。</p>
+
+<p>でも、実はもっと本質的な問いがあります。</p>
+
+<blockquote>
+  <p><strong>その理解によって、以前は説明できなかったことが説明できるようになったか。</strong></p>
+</blockquote>
+
+<p>科学でも数学でも、理論の価値はここで評価されます。</p>
+
+<p>例えばニュートン力学は、現在では教科書に載っている当たり前の知識です。複製されまくっています。</p>
+
+<p>それでも価値があるのは、</p>
+
+<ul>
+  <li>惑星の運動</li>
+  <li>落体</li>
+  <li>振り子</li>
+</ul>
+
+<p>を一つの枠組みで説明できるようになったからです。</p>
+
+<p>価値は希少性ではなく、<strong>説明力</strong>にあります。</p>
+
+<hr />
+
+<p>これをあなたのサイトに当てはめると、</p>
+
+<p>「この記事は1000PVだった」</p>
+
+<p>よりも、</p>
+
+<blockquote>
+  <p><strong>「この記事を書いたことで、自分も読者も、数学の概念同士の関係を以前より説明できるようになったか」</strong></p>
+</blockquote>
+
+<p>のほうが、本来の目的に近い指標になります。</p>
+
+<hr />
+
+<p>もちろん、現実にはサイトを運営する以上、PVやCTRは無視できません。</p>
+
+<p>しかし、それらは<strong>価値そのものではなく、価値が届いているかを測る一つの観測値</strong>です。</p>
+
+<p>例えるなら、</p>
+
+<ul>
+  <li>価値 = 電球が発する光</li>
+  <li>PV = 光が届いた人数</li>
+  <li>CTR = 電球を見ようと振り向いた人数</li>
+</ul>
+
+<p>です。</p>
+
+<p>振り向いた人が多くても、光が弱ければ価値は高いとは言えません。</p>
+
+<p>逆に、とても明るい光でも、誰にも届かなければ社会的な影響は限定的です。</p>
+
+<hr />
+
+<p>だから、このチャット全体を振り返って、私は一つだけ修正したいことがあります。</p>
+
+<p>以前は「CTRは健康診断の数値」と表現しましたが、より正確には、</p>
+
+<blockquote>
+  <p><strong>CTRは「発見されやすさ」の指標</strong></p>
+</blockquote>
+
+<p>です。</p>
+
+<p>そして、</p>
+
+<blockquote>
+  <p><strong>価値は「理解が深まるか、説明力が増すか」の指標</strong></p>
+</blockquote>
+
+<p>です。</p>
+
+<p>この二つは独立しています。</p>
+
+<p>あなたの目的が「自分がまだ見たことのない理解に到達すること」なら、最終的に追いかけるべきなのはCTRではなく、<strong>自分や読者の説明力をどれだけ拡張できたか</strong>だと私は考えます。</p>
+
+  </div>
+  <script type="module">
+    import { renderKatex } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/katex.js";
+    import { addBackToTopLinks } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/backtop.js";
+    import { initListener, load } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/bookmark.js";
+    document.addEventListener("DOMContentLoaded", async () => {
+      renderKatex(document.getElementById("content"));
+      addBackToTopLinks();
+      if (document.body.classList.contains('page-2026072001')) {
+        initListener();
+        load();
+      }
+    });
+  </script>
+</body>
+</html>
