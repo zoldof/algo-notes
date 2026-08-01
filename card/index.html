@@ -1,83 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="iftMWxWANpsgvxI_uGQFejVc_20AYBDnGFsmsrB19VE">
+  <meta name="robots" content="">
+  <meta name="description" content="">
+  <!-- Include -->
+  <!-- KaTeX -->
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
-  <title>Cards</title>
+  <!-- Check dist ⇔ menu フロントマターでの指定によるファイル名とslugの2重管理を避け、CI/CD運用によるディレクトリ構成変更のため -->
+<!-- slug生成とは別にfull_urlとサムネイルパスの準備も行う -->
 
-  <!-- 既存のCSSを読み込みたい場合（例） -->
-  <!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
+
+
+
+
   
-  <style>
-    .page-cards .page-cards__grid{
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-      align-items: stretch;
-    }
+  
+  
+  <meta property="og:type" content="article">
+  
 
-    .page-cards .page-cards__card{
-      border:1px solid #e5e5e5;
-      border-radius:12px;
-      overflow:hidden;
-      background:#fff;
-      box-shadow:0 1px 2px rgba(0,0,0,0.04);
-      height:100%;
-    }
 
-    .page-cards .page-cards__link{
-      display:block;
-      color:inherit;
-      text-decoration:none;
-      height:100%;
-    }
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="https://zoldof.com/card">
+<meta property="og:site_name" content="zoldof.com">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/thumbnail/default.webp">
+<meta name="twitter:card" content="summary_large_image">
 
-    .page-cards .page-cards__img{
-      width:100%;
-      height:160px;
-      object-fit:cover;
-      display:block;
-    }
+  <link rel="canonical" href="https://zoldof.com/card">
+  <title>Cards</title>
+  <!-- General -->
+  <link rel="manifest" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/manifest.json">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/favicon.png">
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/style.css">
+  <!-- Test and Purge *コメントの中身でもビルドバージョン変更が反映されるのでクォートで囲っている -->  
+  <!-- href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@site.github.build_revision/docs/style.css"> -->
+  <!-- append: 'site.github.build_revision' | -->
+  <!-- https://purge.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs -->
+<body class="page-card">
+  <!-- Include -->
+  <header class="site-header">
 
-    .page-cards .page-cards__body{
-      padding:12px;
-    }
+  <a href="https://zoldof.com">📖メニュー</a>
+  <a href="https://zoldof.com/hajime/" target="_blank" rel="noopener noreferrer">🔰はじめに</a>
+  <a href="https://zoldof.github.io/sandbox/mindmap-3d/" target="_blank" rel="noopener noreferrer">🫧マップ</a>
+  <a href="https://twitter.com/intent/tweet?url=https://zoldof.com/card" target="_blank" rel="noopener noreferrer">🐦Tweet</a>
+  <a href="https://social-plugins.line.me/lineit/share?url=https://zoldof.com/card" target="_blank" rel="noopener noreferrer">🍀LINE</a>
+</header>
 
-    .page-cards .page-cards__title{
-      margin:0 0 8px 0;
-      font-size:1rem;
-    }
-
-    .page-cards .page-cards__desc{
-      margin:0;
-      color:#444;
-      font-size:.95rem;
-      line-height:1.5;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="page-cards">
-    <div class="page-cards__grid">
-      {% for c in site.data.cards %}
-        <div class="page-cards__card">
-          <a class="page-cards__link" href="{{ c.url }}">
-            <img
-              class="page-cards__img"
-              src="{{ c.image }}"
-              alt="{{ c.title }}"
-              loading="lazy"
-            >
-            <div class="page-cards__body">
-              <h3 class="page-cards__title">{{ c.title }}</h3>
-              <p class="page-cards__desc">{{ c.description }}</p>
-            </div>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
+  <div id="content">
+    <!-- Liquid -->
+    <div class="page-cards">
+  <div class="page-cards__grid">
+    
+      <div class="page-cards__card">
+        <a class="page-cards__link" href="/items/item1/">
+          <img class="page-cards__img" src="/assets/img/item1.jpg" alt="Item 1" loading="lazy" />
+          <div class="page-cards__body">
+            <h3 class="page-cards__title">Item 1</h3>
+            <p class="page-cards__desc">説明文（短め推奨）</p>
+          </div>
+        </a>
+      </div>
+    
+      <div class="page-cards__card">
+        <a class="page-cards__link" href="/items/item2/">
+          <img class="page-cards__img" src="/assets/img/item2.jpg" alt="Item 2" loading="lazy" />
+          <div class="page-cards__body">
+            <h3 class="page-cards__title">Item 2</h3>
+            <p class="page-cards__desc">説明文（短め推奨）</p>
+          </div>
+        </a>
+      </div>
+    
+      <div class="page-cards__card">
+        <a class="page-cards__link" href="/items/item3/">
+          <img class="page-cards__img" src="/assets/img/item3.jpg" alt="Item 3" loading="lazy" />
+          <div class="page-cards__body">
+            <h3 class="page-cards__title">Item 3</h3>
+            <p class="page-cards__desc">説明文（短め推奨）</p>
+          </div>
+        </a>
+      </div>
+    
   </div>
+</div>
+
+<style>
+  .page-cards .page-cards__grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    align-items: stretch;
+  }
+  .page-cards .page-cards__card{
+    border:1px solid #e5e5e5;
+    border-radius:12px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 1px 2px rgba(0,0,0,0.04);
+    height:100%;
+  }
+  .page-cards .page-cards__link{
+    display:block;
+    color:inherit;
+    text-decoration:none;
+    height:100%;
+  }
+  .page-cards .page-cards__img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+    display:block;
+  }
+  .page-cards .page-cards__body{ padding:12px; }
+  .page-cards .page-cards__title{
+    margin:0 0 8px 0;
+    font-size:1rem;
+  }
+  .page-cards .page-cards__desc{
+    margin:0;
+    color:#444;
+    font-size:.95rem;
+    line-height:1.5;
+  }
+</style>
+
+
+  </div>
+  <script type="module">
+    import { renderKatex } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/katex.js";
+    import { addBackToTopLinks } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/backtop.js";
+    import { initListener, load } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/bookmark.js";
+    document.addEventListener("DOMContentLoaded", async () => {
+      renderKatex(document.getElementById("content"));
+      addBackToTopLinks();
+      if (document.body.classList.contains('page-card')) {
+        initListener();
+        load();
+      }
+    });
+  </script>
 </body>
 </html>
