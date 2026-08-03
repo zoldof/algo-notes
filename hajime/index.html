@@ -51,11 +51,13 @@
   <!-- Include -->
   <header class="site-header">
 
+
   <a href="https://zoldof.com">📖メニュー</a>
   <a href="https://zoldof.com/hajime/" target="_blank" rel="noopener noreferrer">🔰はじめに</a>
   <a href="https://zoldof.github.io/sandbox/mindmap-3d/" target="_blank" rel="noopener noreferrer">🫧マップ</a>
   <a href="https://twitter.com/intent/tweet?url=https://zoldof.com/hajime" target="_blank" rel="noopener noreferrer">🐦Tweet</a>
   <a href="https://social-plugins.line.me/lineit/share?url=https://zoldof.com/hajime" target="_blank" rel="noopener noreferrer">🍀LINE</a>
+
 </header>
 
   <div id="content">
@@ -614,6 +616,7 @@
     document.addEventListener("DOMContentLoaded", async () => {
       renderKatex(document.getElementById("content"));
       addBackToTopLinks();
+      //将来的にメニューページ以外でもしおりが使える形を残すためにslug判定としている
       if (document.body.classList.contains('page-hajime')) {
         initListener();
         load();

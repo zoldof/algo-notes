@@ -7,14 +7,6 @@
   <meta name="robots" content="">
   <meta name="description" content="">
   <!-- Include -->
-  <!-- KaTeX -->
-<link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-<script defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-<script defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-
   <!-- Check dist ⇔ menu フロントマターでの指定によるファイル名とslugの2重管理を避け、CI/CD運用によるディレクトリ構成変更のため -->
 <!-- slug生成とは別にfull_urlとサムネイルパスの準備も行う -->
 
@@ -42,7 +34,6 @@
   <link rel="manifest" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/manifest.json">
   <link rel="icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/favicon.png">
   <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/favicon.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/style.css">
   <!-- Test and Purge *コメントの中身でもビルドバージョン変更が反映されるのでクォートで囲っている -->  
   <!-- href="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@site.github.build_revision/docs/style.css"> -->
   <!-- append: 'site.github.build_revision' | -->
@@ -51,11 +42,9 @@
   <!-- Include -->
   <header class="site-header">
 
-  <a href="https://zoldof.com">📖メニュー</a>
-  <a href="https://zoldof.com/hajime/" target="_blank" rel="noopener noreferrer">🔰はじめに</a>
-  <a href="https://zoldof.github.io/sandbox/mindmap-3d/" target="_blank" rel="noopener noreferrer">🫧マップ</a>
-  <a href="https://twitter.com/intent/tweet?url=https://zoldof.com/caterion" target="_blank" rel="noopener noreferrer">🐦Tweet</a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https://zoldof.com/caterion" target="_blank" rel="noopener noreferrer">🍀LINE</a>
+
+  <a href="https://zoldof.com">内核転送</a>
+
 </header>
 
   <div id="content">
@@ -229,18 +218,5 @@
 
 
   </div>
-  <script type="module">
-    import { renderKatex } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/katex.js";
-    import { addBackToTopLinks } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/backtop.js";
-    import { initListener, load } from "https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/bookmark.js";
-    document.addEventListener("DOMContentLoaded", async () => {
-      renderKatex(document.getElementById("content"));
-      addBackToTopLinks();
-      if (document.body.classList.contains('page-caterion')) {
-        initListener();
-        load();
-      }
-    });
-  </script>
 </body>
 </html>
