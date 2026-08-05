@@ -48,7 +48,7 @@
     <a class="site-hero__home" href="https://zoldof.com">Algorithm</a>
     <div class="site-hero__music">
       <button id="site-hero__playBtn" type="button" aria-label="music">▶️</button>
-      <audio id="audio" preload="metadata" src="music.mp3"></audio>
+      <audio id="audio" preload="metadata" src="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/dist/caterion/music.mp3"></audio>
     </div>
   </header>
   <div id="content">
@@ -227,6 +227,20 @@
 </div>
 
 <script>
+  const btn = document.getElementById('playBtn');
+  const audio = document.getElementById('audio');
+  
+  btn.addEventListener('click', async () => {
+    if (audio.paused) {
+      await audio.play();      // 停止時に currentTime=0 に戻してあるので最初からになる
+      btn.textContent = '⏹️';
+    } else {
+      audio.pause();
+      audio.currentTime = 0;  // 次の再生は最初から
+      btn.textContent = '▶️';
+    }
+  });
+
   (function(){
     const modal = document.getElementById('pcModal');
     const imgEl = document.getElementById('pcModalImg');
