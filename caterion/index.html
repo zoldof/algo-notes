@@ -46,7 +46,7 @@
       class="site-hero__img"
     />
     <a id="site-hero__home" class="site-hero__iconBtn" href="https://zoldof.com">🌏</a>
-    <button id="site-hero__music" class="site-hero__iconBtn" type="button" aria-label="music">🎵</button>
+    <button id="site-hero__music" class="site-hero__iconBtn" type="button" aria-label="music">🪩</button>
     <audio id="audio" preload="metadata" src="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/dist/caterion/music.mp3"></audio>
   </header>
   <div id="content">
@@ -220,9 +220,6 @@
 <script>
   const btn = document.getElementById('site-hero__music');
   const audio = document.getElementById('audio');
-
-  // 初期状態
-  setPlayingUI(!audio.paused);
   
   btn.addEventListener('click', async () => {
     if (audio.paused) {
