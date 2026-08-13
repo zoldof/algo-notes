@@ -48,6 +48,8 @@
     <a id="site-hero__home" class="site-hero__iconBtn" href="https://zoldof.com">🌏</a>
     <button id="site-hero__music" class="site-hero__iconBtn" type="button" aria-label="music">🪩</button>
     <audio id="audio" preload="metadata" src="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/dist/caterion/music.mp3"></audio>
+    <button id="site-hero__music_2" class="site-hero__iconBtn" type="button" aria-label="music_2">♾️</button>
+    <audio id="audio_2" preload="metadata" src="https://cdn.jsdelivr.net/gh/zoldof/algo-notes-ci@main/docs/dist/caterion/music-2.mp3" loop></audio>
   </header>
   <div id="content">
     <!-- Liquid -->
@@ -146,6 +148,7 @@
     width: 24px;
     height: 24px;
     font-size: 10px;
+    top: 7px;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -153,14 +156,17 @@
   }
   #site-hero__home{
     position: absolute;
-    top: 7px;
     left: 7px;
     z-index: 2;
     text-decoration: none;
   }
   #site-hero__music{
     position: absolute;
-    top: 7px;
+    right: 32px;
+    z-index: 2;
+  }
+  #site-hero__music_2{
+    position: absolute;
     right: 7px;
     z-index: 2;
   }
@@ -249,13 +255,27 @@
 <script>
   const btn = document.getElementById('site-hero__music');
   const audio = document.getElementById('audio');
+  const btn_2 = document.getElementById('site-hero__music_2');
+  const audio_2 = document.getElementById('audio_2');
   
   btn.addEventListener('click', async () => {
     if (audio.paused) {
+      audio_2.pause();
+      audio_2.currentTime = 0;
       audio.currentTime = 0;
       audio.play();
     } else {
       audio.pause();
+    }
+  });
+
+  btn_2.addEventListener('click', async () => {
+    if (audio_2.paused) {
+      audio.pause();
+      audio.currentTime = 0;
+      audio_2.play();
+    } else {
+      audio_2.pause();
     }
   });
 
